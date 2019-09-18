@@ -5,17 +5,7 @@ import Color from "../../shared/color/index";
 
 const Main = () => {
     return (
-            <div className="main-container">
-                <div className="container-fluid">
-                    <h3 className="heading">Color - Swatches</h3>
-                    <div className="wrapper">
-                        <Route exact path='/' component={Color}/>
-                        {/* <Route path='/about' component={About}/>
-                        <Route path='/contact' component={Contact}/> */}
-                        {/* <Color/> */}
-                    </div>
-                </div>
-            </div>
+           <></>
     )
 }
 export default Main;
