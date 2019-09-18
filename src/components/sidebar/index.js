@@ -1,21 +1,23 @@
 import React from 'react'
-import "./style.css";
+import "./style.sass";
+import { NavLink } from 'react-router-dom';
 
-export default function Sidebar() {
+const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul>
-                <li><a href="/">Color</a></li>
-                <li><a href="/">Typography</a></li>
-                <li><a href="/">Logo</a></li>
-                <li><a href="/">Buttons</a></li>
-                <li><a href="/">Links</a></li>
-                <li><a href="/">Label</a></li>
-                <li><a href="/">Alert</a></li>
-                <li><a href="/">Form Element</a></li>
-                <li><a href="/">Tooltips</a></li>
-                <li><a href="/">Accordions</a></li>
+                <li><NavLink to="/">Color</NavLink></li>
+                <li><NavLink to="/typo">Typography</NavLink></li>
+                <li><NavLink to="/logo">Logo</NavLink></li>
+                <li><NavLink to="/button">Button</NavLink></li>
+                <li><NavLink to="/links">Links</NavLink></li>
+                <li><NavLink to="/label">Label</NavLink></li>
+                <li><NavLink to="/alert">Alert</NavLink></li>
+                <li><NavLink to="/form">Form</NavLink></li>
+                <li><NavLink to="/tooltips">Tooltips</NavLink></li>
+                <li><NavLink to="/accordions">Accordions</NavLink></li>
             </ul> 
         </div>
     )
 }
+export default Sidebar;

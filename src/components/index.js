@@ -1,7 +1,9 @@
 import React from 'react'
 import Sidebar from "./sidebar/index";
-import Main from "./main/index";
-import "./style.css";
+// import Main from "./main/index";
+import "./style.sass";
+import { BrowserRouter, Route } from 'react-router-dom';
+import Color from "../shared/color/index";
 
 export default function index() {
     return (
@@ -16,7 +18,20 @@ export default function index() {
             <div className="container-fluid">
                 <div className="row d-flex">
                     <Sidebar/>
-                    <Main/>
+                    {/* <Main/> */}
+                    <BrowserRouter>
+                        <div className="main-container">
+                            <div className="container-fluid">
+                                <h3 className="heading">Color - Swatches</h3>
+                                <div className="wrapper">
+                                    <Route exact path='/' component={Color}/>
+                                    {/* <Route path='/about' component={About}/>
+                                    <Route path='/contact' component={Contact}/> */}
+                                    {/* <Color/> */}
+                                </div>
+                            </div>
+                        </div>
+                    </BrowserRouter>
                 </div>
             </div>
         </>

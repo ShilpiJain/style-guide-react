@@ -1,11 +1,11 @@
 import React from 'react'
-import "./style.css";
+import "./style.sass";
 
-const H4 = () => {
+const H2 = () => {
     return (
         <div>
             
         </div>
     )
 }
-export default H4;
+export default H2;
