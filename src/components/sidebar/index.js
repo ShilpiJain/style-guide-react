@@ -6,28 +6,97 @@ const Sidebar = () => {
     return (
         <div className="sidebar">
             <ul>
-                <li><NavLink to="/">Color</NavLink></li>
-                <li><NavLink to="/typo">Typography</NavLink></li>
-                <li><NavLink to="/buttons">Buttons</NavLink></li>
-                <li><NavLink to="/form">Form</NavLink></li>
-                <li><NavLink to="/icons">Icons</NavLink></li>
-                <li><NavLink to="/breadcrumb">Breadcrumb</NavLink></li>
-                <li><NavLink to="/placeholder">Placeholders</NavLink></li>
-                <li><NavLink to="/sagements">Sagements</NavLink></li>
-                <li><NavLink to="/steps">Steps</NavLink></li>
-                <li><NavLink to="/menu">Menus</NavLink></li>
-                <li><NavLink to="/message">Message</NavLink></li>
-                <li><NavLink to="/tables">Tabels</NavLink></li>
-                <li><NavLink to="/card">Cards</NavLink></li>
-                <li><NavLink to="/comment">Comments</NavLink></li>   
-                <li><NavLink to="/feed">Feed</NavLink></li>   
-                <li><NavLink to="/statis">Statis</NavLink></li>   
-                <li><NavLink to="/progress">Progress Indicators</NavLink></li>  
-                <li><NavLink to="/rating">Rating</NavLink></li>
-                <li><NavLink to="/search">Search</NavLink></li>
-                <li><NavLink to="/tabs">Tabs</NavLink></li>
+                {
+                    navigation.map( (navigate, i) =>{
+                        return(
+                            <li><NavLink to={navigate.link}>{navigate.name}</NavLink></li>
+                        )
+                    })
+                }
             </ul> 
         </div>
     )
 }
+const navigation = [
+    {
+        link : "/",
+        name : "Color"
+    },
+    {
+        link : "/typo",
+        name : "Typography"
+    },
+    {
+        link : "/buttons",
+        name : "Buttons"
+    },
+    {
+        link : "/form",
+        name : "Form"
+    },
+    {
+        link : "/icons",
+        name : "Icons"
+    },
+    {
+        link : "/breadcrumb",
+        name : "Breadcrumb"
+    },
+    {
+        link : "/placeholder",
+        name : "Placeholders"
+    },
+    {
+        link : "/sagements",
+        name : "Sagements"
+    },
+    {
+        link : "/steps",
+        name : "Steps"
+    },
+    {
+        link : "/menu",
+        name : "Menus"
+    },
+    {
+        link : "/message",
+        name : "Message"
+    },
+    {
+        link : "/tables",
+        name : "Tabels"
+    },
+    {
+        link : "/comment",
+        name : "Comments"
+    },
+    {
+        link : "/feed",
+        name : "Feed"
+    },
+    {
+        link : "/statis",
+        name : "Statis"
+    },
+    {
+        link : "/progress",
+        name : "Progress"
+    },
+    {
+        link : "/rating",
+        name : "Rating"
+    },
+    {
+        link : "/search",
+        name : "Search"
+    },
+    {
+        link : "/tabs",
+        name : "Tabs"
+    },
+    {
+        link : "/card",
+        name : "Cards"
+    },
+]
 export default Sidebar;

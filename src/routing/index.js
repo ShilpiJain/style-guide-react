@@ -1,6 +1,5 @@
 import React from 'react'
 import { Route , Switch} from 'react-router-dom';
-// import redirectPage from "./constants";
 import Color from "../shared/color/index";
 import Typography from "../shared/typography/index";
 import Breadcrumb from "../shared/breadcrumb";
@@ -25,7 +24,6 @@ import Tabs from "../shared/tabs";
 const Routing = () => {
     return (
         <Switch>
-            {/* <Route exact={} path='/' component={Color}/> */}
             {
                 routes.map((route, i) => {
                     return (
