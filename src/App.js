@@ -21,14 +21,12 @@ const App = () => {
             <Sidebar/>
             <div className="main-container">
               <div className="container-fluid">
-                <div className="wrapper">
-                  <Switch>
-                    <Route exact path='/' component={Color}/>
-                    <Route path='/typo' component={Typography}/>
-                    {/* <Route path='/contact' component={Contact}/> */}
-                    {/* <Color/> */}
-                  </Switch>
-                </div>
+                <Switch>
+                  <Route exact path='/' component={Color}/>
+                  <Route path='/typo' component={Typography}/>
+                  {/* <Route path='/contact' component={Contact}/> */}
+                  {/* <Color/> */}
+                </Switch>
               </div>
             </div>
           </div>

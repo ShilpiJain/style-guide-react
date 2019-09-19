@@ -7,6 +7,7 @@ const Sidebar = () => {
         <div className="sidebar">
             <ul>
                 <li><NavLink to="/">Color</NavLink></li>
+                <li><NavLink to="/text">Text Color</NavLink></li>
                 <li><NavLink to="/typo">Typography</NavLink></li>
                 <li><NavLink to="/logo">Logo</NavLink></li>
                 <li><NavLink to="/button">Button</NavLink></li>
