@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Sidebar from "././components/sidebar/index";
 import Color from "./shared/color/index";
 import Typography from "./shared/typography/index";
+import Breadcrumb from "./shared/breadcrumb";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
               <div className="container-fluid">
                 <Switch>
                   <Route exact path='/' component={Color}/>
+                  <Route path='/breadcrumb' component={Breadcrumb}/>
                   <Route path='/typo' component={Typography}/>
                   {/* <Route path='/contact' component={Contact}/> */}
                   {/* <Color/> */}
