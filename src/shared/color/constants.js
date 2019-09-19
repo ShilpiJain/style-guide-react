@@ -105,6 +105,19 @@ let colorList = [{
         name: "white",
         value: "#fff",
         rgb: "rgb(255, 255, 255)"
+    },
+    {
+        id: 19,
+        name: "greenish-teal",
+        value: "#2bc480",
+        rgb: "rgb(43, 196, 128)"
+    },
+    {
+        id: 20,
+        name: "light-navy",
+        value: "#106296",
+        rgb: "rgb(43, 196, 128)"
     }
+
 ];
 export default colorList;

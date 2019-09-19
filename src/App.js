@@ -1,10 +1,8 @@
 import React from 'react';
 import './App.sass';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import Sidebar from "././components/sidebar/index";
-import Color from "./shared/color/index";
-import Typography from "./shared/typography/index";
-import Breadcrumb from "./shared/breadcrumb";
+import Routing from "./routing";
 
 const App = () => {
   return (
@@ -22,13 +20,27 @@ const App = () => {
             <Sidebar/>
             <div className="main-container">
               <div className="container-fluid">
-                <Switch>
-                  <Route exact path='/' component={Color}/>
+                  <Routing />
+                  {/* <Route exact path='/' component={Color}/> */}
+                  {/* <Route path='/typo' component={Typography}/>
+                  <Route path='/buttons' component={Buttons}/>
+                  <Route path='/form' component={Form}/>
+                  <Route path='/icons' component={Icons}/>
                   <Route path='/breadcrumb' component={Breadcrumb}/>
-                  <Route path='/typo' component={Typography}/>
-                  {/* <Route path='/contact' component={Contact}/> */}
-                  {/* <Color/> */}
-                </Switch>
+                  <Route path="/placeholder" component={Placeholders}/>
+                  <Route path="/sagements" component={Sagements}/>
+                  <Route path="/steps" component={Steps}/>
+                  <Route path="/menu" component={Menus}/>
+                  <Route path="/message" component={Message}/>
+                  <Route path="/tables" component={Tabels}/>
+                  <Route path="/card" component={Cards}/>
+                  <Route path="/comment" component={Comments}/>  
+                  <Route path="/feed" component={Feed}/> 
+                  <Route path="/statis" component={Statis}/>   
+                  <Route path="/progress" component={Progress}/>
+                  <Route path="/rating"component={Rating}/>
+                  <Route path="/search" component={Search}/>
+                  <Route path="/tabs" component={Tabs}/> */}
               </div>
             </div>
           </div>

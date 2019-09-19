@@ -7,7 +7,11 @@ import colorList from "./constants";
 const Color = () => {
     const [colorName, setColorName] = useState(colorList);
     return (
-        <ColorBlock colors={colorName}/>    
+        <>
+            <h3 className="heading">Color - <span>Swatches</span></h3>
+            <p>Color Swatches used in Cars24 site.</p>
+            <ColorBlock colors={colorName}/>  
+        </>  
     )
 }
 

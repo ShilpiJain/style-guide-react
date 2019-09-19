@@ -11,7 +11,7 @@ const Sidebar = () => {
                 <li><NavLink to="/buttons">Buttons</NavLink></li>
                 <li><NavLink to="/form">Form</NavLink></li>
                 <li><NavLink to="/icons">Icons</NavLink></li>
-                <li><NavLink to="/breadcrumb">Breadcrumbs</NavLink></li>
+                <li><NavLink to="/breadcrumb">Breadcrumb</NavLink></li>
                 <li><NavLink to="/placeholder">Placeholders</NavLink></li>
                 <li><NavLink to="/sagements">Sagements</NavLink></li>
                 <li><NavLink to="/steps">Steps</NavLink></li>
