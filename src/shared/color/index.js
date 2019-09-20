@@ -5,7 +5,7 @@ import ColorBlock from "./color-block";
 import colorList from "./constants";
 
 const Color = () => {
-    const [colorName, setColorName] = useState(colorList);
+    const [colorName] = useState(colorList);
     return (
         <>
             <h3 className="heading">Color - <span>Swatches</span></h3>

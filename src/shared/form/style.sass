@@ -1,0 +1,54 @@
+.text-box
+    padding: 0 20px
+    border: 1px solid #dde5eb
+    height: 48px
+    border-radius: 5px
+    font-size: 16px
+    line-height: 1.31
+    color: #465166
+    width: 100%
+    &:focus
+        outline: none
+        border: 2px solid #ed6c0d;
+        box-shadow: none;
+        ~ label
+            padding: 0 20px;
+            font-size: 10px;
+            color: #ed6c0d;
+            top: -7px;
+            line-height: 13px;
+            height: 14px;
+            width: auto;
+            border-radius: 0;
+            z-index: 1;
+            border: 1px solid transparent;
+            &:after
+                height: 4px;
+                content: "";
+                width: 70%;
+                position: absolute;
+                left: 15%;
+                background: #fff;
+                top: 5px;
+                z-index: -1;
+
+.username
+    position: relative;
+    margin-bottom: 35px;
+    label
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+        line-height: 46px;
+        color: rgba(0,0,0,.2);
+        font-size: 14px;
+        -webkit-transition: all .1s ease-in-out;
+        transition: all .1s ease-in-out;
+        border: 1px solid transparent;
+        padding: 0 20px;
+        border: 1px solid #dde5eb;
+        height: 48px;
+        border-radius: 5px;
